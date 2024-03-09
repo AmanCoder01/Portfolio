@@ -30,7 +30,7 @@ const Header = () => {
                     <a href="tel:+919026849004" className='hover:text-indigo-600'><FaPhoneAlt /></a>
                 </div>
 
-               {toggle ? <RxCross1 size={20} className='inline md:hidden cursor-pointer' onClick={handleClick}/> : <GiHamburgerMenu size={20} className='inline md:hidden cursor-pointer' onClick={handleClick} />
+               {toggle ? <RxCross1 size={20} className='inline md:hidden cursor-pointer font-bold' onClick={handleClick}/> : <GiHamburgerMenu size={20} className='inline md:hidden cursor-pointer' onClick={handleClick} />
   }          </div>
         </div>
     )
