@@ -25,7 +25,7 @@ const work = [
 const Projects = () => {
     return (
        <div className='bg-[#F8F7F1] '>
-         <div id='project' className=' py-8 flex flex-col w-11/12 md:w-10/12 mx-auto gap-12'>
+         <div id='project' className=' py-8 flex flex-col w-full md:w-10/12 mx-auto gap-12'>
             <div className=' text-center'>
                 <h1 className='text-[2.5rem] font-bold'>My Latest Projects</h1>
                 <div className='text-md font-medium'>Perfect solution for digital experience</div>
