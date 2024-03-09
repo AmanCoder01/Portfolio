@@ -3,6 +3,7 @@ import { Button, Navbar } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross1 } from "react-icons/rx";
 
 
 const Header = () => {
@@ -29,17 +30,8 @@ const Header = () => {
                     <a href="tel:+919026849004" className='hover:text-indigo-600'><FaPhoneAlt /></a>
                 </div>
 
-                <GiHamburgerMenu size={20} className='inline md:hidden cursor-pointer' onClick={handleClick} />
-            </div>
-            {/* {toggle && <div className='text-lg font-semibold gap-6  flex md:hidden flex-col mt-5'>
-                <a href="" className='hover:text-indigo-600 border-b-2'>SERVICES</a>
-                <a href="" className='hover:text-indigo-600 border-b-2'>EXPERIENCE</a>
-                <a href="" className='hover:text-indigo-600  border-b-2'>PROJECTS</a>
-                <a href="" className='hover:text-indigo-600 border-b-2'>TESTIMONIALS</a>
-                <a href="" className='hover:text-indigo-600 border-b-2'>+91 90268 49004</a>
-                <a href="tel:+919026849004" className='hover:text-indigo-600'><FaPhoneAlt /></a>
-            </div>} */}
-
+               {toggle ? <RxCross1 size={20} className='inline md:hidden cursor-pointer' onClick={handleClick}/> : <GiHamburgerMenu size={20} className='inline md:hidden cursor-pointer' onClick={handleClick} />
+  }          </div>
         </div>
     )
 }
